@@ -31,6 +31,7 @@
   /* button colors */
   $buttoncolors:
   (primary, $primary-color),
+  (primary-outline, mix($primary-color, transparent, 20%)),
   (inverse, #fff),
   (light-outline, transparent),
   (success, $success-color),
@@ -48,6 +49,9 @@
         @if ($buttoncolor == light-outline) {
           border: 1px solid #fff;
         }
+      @if ($buttoncolor == primary-outline) {
+        border: 2.5px solid $primary-color;
+      }
 
       &:visited {
         @include yiq-contrasted($color);
@@ -93,3 +97,22 @@
     font-size: $type-size-7;
   }
 }
+
+
+/* light outline with semi-transparent primary background */
+.btn-light-outline-primary {
+  background-color: rgba($primary-color, 0.1);
+  border: 1px solid $primary-color;
+  color: $primary-color;
+
+  &:visited {
+    color: $primary-color;
+  }
+
+  &:hover {
+    background-color: rgba(mix(#000, $primary-color, 20%), 0.15);
+    color: mix(#000, $primary-color, 20%);
+    border-color: mix(#000, $primary-color, 20%);
+  }
+}
+

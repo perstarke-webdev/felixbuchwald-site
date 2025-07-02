@@ -60,6 +60,8 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  margin-bottom: 3rem;
+  font-size: 300% !important;
 
   a {
     color: $text-color;
@@ -215,7 +217,7 @@ text-align: center;
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-1;
 
       @include breakpoint($small) {
         font-size: $type-size-1;
