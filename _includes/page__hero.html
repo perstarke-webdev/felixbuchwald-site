@@ -33,7 +33,7 @@
         <p>
         {% for action in page.header.actions %}
           {% if action.label == "Let's talk" %}
-          <a href="#contact" class="btn btn--primary-outline btn--large" style="margin-right: 1rem;">Let's talk</a>
+          <a href="#contact" class="btn btn--primary-outline btn--large" style="padding-right: 3rem; padding-left: 3rem;">Let's talk</a>
           {% else %}
           <a href="{{ action.url | relative_url }}" class="btn btn--light-outline btn--large" {% if action.blank %} target="_blank" rel="noopener noreferrer nofollow"{% endif %}>{{ action.label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a>
           {% endif %}
