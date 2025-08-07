@@ -1,14 +1,11 @@
 # main links
 main:
-  - title: "Work"
+  - title: "work"
     url: /#work
     blank: false
-  - title: "Personal Brand"
-    url: /#personalbrand
-    blank: false
-  - title: "About"
+  - title: "about"
     url: /#about
     blank: false
-  - title: "Contact"
+  - title: "call buchen"
     url: /#contact
     blank: false
