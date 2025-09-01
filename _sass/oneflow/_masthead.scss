@@ -7,9 +7,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: $background-color;
 
-  border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
@@ -45,7 +44,7 @@
 }
 
 .site-logo img {
-  max-height: 4rem;
+  max-height: 2rem;
 }
 
 .site-title {

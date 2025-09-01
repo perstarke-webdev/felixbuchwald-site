@@ -2,6 +2,10 @@
    BUTTONS
    ========================================================================== */
 
+.btn--primary, .btn--cta {
+  color: #000 !important;
+}
+
 /*
    Default button
    ========================================================================== */
@@ -37,11 +41,21 @@
   (success, $success-color),
   (warning, $warning-color),
   (danger, $danger-color),
-  (info, $info-color);
+  (info, $info-color),
+  (cta, $primary-color);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
       @include yiq-contrasted($color);
+
+      @if ($buttoncolor == primary) {
+        color: #000;
+      }
+
+      @if ($buttoncolor == cta) {
+        color: #000;
+      }
+
       @if ($buttoncolor == inverse) {
         border: 1px solid $border-color;
       }
@@ -55,10 +69,22 @@
 
       &:visited {
         @include yiq-contrasted($color);
+        @if ($buttoncolor == primary) {
+          color: #000;
+        }
+        @if ($buttoncolor == cta) {
+          color: #000;
+        }
       }
 
       &:hover {
         @include yiq-contrasted(mix(#000, $color, 20%));
+        @if ($buttoncolor == primary) {
+          color: #000;
+        }
+        @if ($buttoncolor == cta) {
+          color: #000;
+        }
       }
     }
   }

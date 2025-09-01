@@ -172,7 +172,8 @@ text-align: center;
 }
 
 .page__hero {
-
+  min-height: 80vh;
+  width: 100vw;
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
@@ -180,6 +181,23 @@ text-align: center;
   animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  .page__lead {
+    margin-bottom: 2rem;
+  }
+
+  .btn--primary-outline {
+    margin-bottom: 2rem;
+  }
 
   &--overlay {
     position: relative;
@@ -193,6 +211,15 @@ text-align: center;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .wrapper {
+      text-align: center;
+    }
 
     a {
       color: #fff;
@@ -230,6 +257,15 @@ text-align: center;
   width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
+}
+
+.page__hero-logo {
+  width: 90%;
+  margin: 4rem auto 2rem;
+
+  @include breakpoint($large) {
+    width: 70%;
+  }
 }
 
 .page__hero-caption {

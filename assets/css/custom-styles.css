@@ -228,7 +228,7 @@
     border: 1px solid #555;
     border-radius: 6px;
     font-size: 1rem;
-    background: #28384f;
+    background: #2b375f;
     color: #fff;
 }
 
@@ -242,8 +242,8 @@
 .contact-form button {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #d86d02;
-    color: #1D2B3F;
+    background-color: #FFE070;
+    color: #000000;
     font-weight: 600;
     border: none;
     border-radius: 6px;
@@ -252,7 +252,7 @@
 }
 
 .contact-form button:hover {
-    background-color: #f18c3c;
+    filter: brightness(80%);
     transform: translateY(-2px);
 }
 
