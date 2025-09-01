@@ -6,6 +6,3 @@ main:
   - title: "about"
     url: /#about
     blank: false
-  - title: "call buchen"
-    url: /#contact
-    blank: false

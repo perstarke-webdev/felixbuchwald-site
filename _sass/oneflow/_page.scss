@@ -266,7 +266,6 @@ text-align: center;
   background-image: url("/assets/images/header.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
 
     /* Overlay */
@@ -284,6 +283,5 @@ text-align: center;
     background-image: url("/assets/images/header.webp");
     background-size: contain;
     background-repeat: repeat-y;
-    background-attachment: scroll;
   }
 }
