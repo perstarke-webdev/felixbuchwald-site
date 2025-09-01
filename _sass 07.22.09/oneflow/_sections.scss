@@ -1,0 +1,22 @@
+.section-sep {
+    border: 1px solid transparent;
+}
+
+section.site-section {
+    padding: 80px 5vw 20px 5vw;
+    width: 100vw;
+    margin-top: -22px;
+    margin-bottom: -22px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+section.first-section {
+    margin-top: -2em;
+}
+
+section.alternative-color {
+    background-color: $info-color;
+}
