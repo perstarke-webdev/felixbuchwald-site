@@ -1,6 +1,7 @@
 
 
 @import "about-section.css";
+@import url('https://unpkg.com/swiper/swiper-bundle.min.css');
 
 .work-section h1 {
     font-size: 2rem;
@@ -435,6 +436,48 @@
     .logo-slider {
         animation-duration: 20s; /* Faster slide on mobile */
     }
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    background-color: #2b375f; /* Use the dark blue background */
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto; /* Center the card and add vertical margin */
+    max-width: 800px; /* Limit width for readability */
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #E3E2DE; /* Light grey for main text */
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FFE070; /* Brand yellow for author name */
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-position {
+    font-size: 0.9rem;
+    color: #FFFFFF; /* White for position */
+    opacity: 0.8;
+}
+
+/* Swiper Navigation and Pagination Customization */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #FFE070 !important; /* Brand yellow for arrows */
+}
+
+.swiper-pagination-bullet-active {
+    background: #FFE070 !important; /* Brand yellow for active pagination dot */
 }
 
 

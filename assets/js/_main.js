@@ -133,4 +133,36 @@ $(function() {
       $(this).append(anchor);
     }
   });
+
+  // Swiper Testimonials
+  if (document.querySelector('.swiper-container')) {
+      const swiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 30,
+          effect: 'fade', // Optional: adds a fade effect
+          fadeEffect: {
+              crossFade: true,
+          },
+
+          // If we need pagination
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+
+          // Navigation arrows
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+              el: '.swiper-scrollbar',
+          },
+      });
+  }
 });
