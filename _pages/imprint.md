@@ -41,15 +41,15 @@ Der Anbieter verwendet diese Protokolldaten *nicht*!
 
 Der Anbieter behält sich jedoch vor, die Protokolldaten nachträglich zu überprüfen, wenn aufgrund konkreter Anhaltspunkte der berechtigte Verdacht einer rechtswidrigen Nutzung besteht.
 
-#### GitHub Pages und CDN-Nutzung:
+#### CDN-Nutzung:
 
-Diese Website wird über [GitHub Pages](https://pages.github.com/) bereitgestellt, einem von GitHub, Inc. angebotenen Dienst, der es ermöglicht, Webseiteninhalte effizient und schnell weltweit zu verteilen. Die Verwendung von GitHub Pages integriert automatisch ein Content Delivery Network (CDN), um die Ladezeiten der Website zu optimieren und die Verfügbarkeit von Inhalten sicherzustellen.
+Diese Website wird über ein Content Delivery Network (CDN) bereitgestellt, das es ermöglicht, Webseiteninhalte effizient und schnell weltweit zu verteilen. Die Verwendung eines CDN optimiert die Ladezeiten der Website und stellt die Verfügbarkeit von Inhalten sicher.
 
 Durch die Nutzung dieser Website erklären Sie sich damit einverstanden, dass einige Ihrer nicht-persönlichen Daten, wie die IP-Adresse und Informationen zur Seitennutzung, über das CDN übertragen werden können, um eine optimale Leistung der Website zu gewährleisten. Diese Datenübertragung erfolgt in Übereinstimmung mit den geltenden Datenschutzbestimmungen.
 
 Wir respektieren Ihre Privatsphäre und ergreifen angemessene Maßnahmen, um Ihre persönlichen Informationen zu schützen. Bitte beachten Sie unsere Datenschutzerklärung für weitere Informationen darüber, wie wir mit Ihren Daten umgehen.
 
-Bei Fragen oder Anliegen zur Verwendung von GitHub Pages und des CDNs auf dieser Website können Sie sich gerne an uns wenden.
+Bei Fragen oder Anliegen zur Verwendung des CDN auf dieser Website können Sie sich gerne an uns wenden.
 
 #### Kontaktaufnahme
 Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.
