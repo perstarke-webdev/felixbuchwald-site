@@ -471,9 +471,28 @@
 }
 
 /* Swiper Navigation and Pagination Customization */
+.swiper-controls {
+    display: flex;
+    justify-content: center; /* Center the controls */
+    align-items: center;
+    margin-top: 1rem; /* Space from the testimonial card */
+    gap: 1rem; /* Space between pagination and arrows */
+}
+
 .swiper-button-next,
 .swiper-button-prev {
+    position: static !important; /* Override Swiper's default absolute positioning */
+    transform: none !important; /* Remove any default transforms */
+    margin: 0; /* Remove default margins */
+    width: auto; /* Allow content to define width */
+    height: auto; /* Allow content to define height */
     color: #FFE070 !important; /* Brand yellow for arrows */
+    font-size: 1.5rem; /* Adjust arrow size */
+}
+
+.swiper-pagination {
+    position: static !important; /* Override Swiper's default absolute positioning */
+    width: auto !important; /* Allow content to define width */
 }
 
 .swiper-pagination-bullet-active {
