@@ -1,0 +1,59 @@
+#about h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#about {
+    padding: 4rem 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about-card {
+    background-color: #2b375f !important;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #FFE070;
+}
+
+.about-card .icon {
+    font-size: 3.5rem;
+    color: #FFE070;
+    margin-bottom: 1.5rem;
+}
+
+.about-card h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+
+.about-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+    color: #FFE070;
+    margin-bottom: 1rem;
+}
+
+.about-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #FFFFFF !important;
+}
+
+@media (max-width: 960px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
