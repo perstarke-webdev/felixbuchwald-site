@@ -391,10 +391,9 @@
 
 .work-section {
     background: #1B264F;
-    height: 100vh;           /* strict viewport "window" */
-    overflow: hidden;        /* crops top & bottom cleanly */
+    overflow: hidden;        /* strict cropping */
     display: flex;
-    justify-content: center; /* center the whole collage block */
+    justify-content: center;
     align-items: flex-start;
     margin: 0;
     padding: 0;
@@ -403,22 +402,22 @@
 .work-grid {
     display: flex;
     justify-content: center;
-    width: 92%;              /* a bit wider, closer to full bleed */
-    max-width: 1400px;       /* safety cap */
-    gap: 8px;                /* minimal horizontal gutter between columns */
+    width: 92%;
+    max-width: 1400px;
+    gap: 8px;
 }
 
 .col {
-    width: 30%;              /* each column ~30% of collage */
+    width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 6px;                /* very tight vertical gutter */
+    gap: 6px;
 }
 
 .col img {
-    width: 100%;             /* fill column width */
-    height: auto;            /* keep proportions */
+    width: 100%;
+    height: auto;
     display: block;
-    border-radius: 0;        /* no rounding */
+    border-radius: 0;
 }
 
