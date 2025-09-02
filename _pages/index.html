@@ -172,8 +172,24 @@ excerpt: "Wir übernehmen Content-Produktion, Strategie & Creative-Testing – d
 
 
 
+        </div>
+    </section>
+
+<div class="logo-slider-container">
+    <div class="logo-slider">
+        {% assign logos = site.static_files | where: "image", true | where_exp: "item", "item.path contains '/assets/images/client-logos/'" %}
+        {% for logo in logos %}
+            <img src="{{ logo.path }}" alt="Client Logo">
+        {% endfor %}
+        {% for logo in logos %}
+            <img src="{{ logo.path }}" alt="Client Logo">
+        {% endfor %}
+    </div>
+</div>
+
+
+
 <section class="site-section" id="contact">
-    <h1 data-aos="fade-right" >call buchen</h1>
     <div data-aos="fade-left" class="notice--primary">
         <p style="font-size: 130%">Kontaktiere uns über das Formular, buche deinen Call, oder folge uns auf Social Media.</p>
         <!-- Contact-specific socials -->
