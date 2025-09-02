@@ -6,17 +6,81 @@ layout: page
 permalink: /
 
 header:
-    overlay_image: /assets/images/header.webp
-    overlay_filter: rgba(0, 0, 0, 0.6)
+    overlay_image: /
 
-    actions:
-        - label: "Let's talk"
-          url: #contact
-          blank: false
 
 excerpt: "Wir übernehmen Content-Produktion, Strategie & Creative-Testing – du bekommst messbare Ergebnisse und entlastest dein Marketing-Team spürbar."
 
 ---
+
+<section class="site-section" id="work">
+
+    <h1>work</h1>
+
+    <section class="work-section">
+        <div class="work-grid">
+            <div class="col col-a">
+                <img src="/assets/images/work/DFB.webp" alt="DFB">
+                <img src="/assets/images/work/Nivea 1.webp" alt="NIVEA 1">
+            </div>
+
+            <div class="col col-b">
+                <img src="/assets/images/work/Hugo Boss.webp" alt="Hugo Boss">
+                <img src="/assets/images/work/Nivea 2.webp" alt="NIVEA 2">
+                <img src="/assets/images/work/Kapten.webp" alt="Kapten & Son">
+            </div>
+
+            <div class="col col-c">
+                <img src="/assets/images/work/Puma.webp" alt="Puma">
+                <img src="/assets/images/work/Rosevita.webp" alt="Rosevita">
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const section = document.querySelector(".work-section");
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop;
+        const scrollTarget = sectionHeight * 0.8; // 80% of section height
+
+        const cols = [
+            { el: document.querySelector(".col-a"), factor: 0.7 }, // slower
+            { el: document.querySelector(".col-b"), factor: 1.3 }, // faster
+            { el: document.querySelector(".col-c"), factor: 0.7 }  // slower
+        ];
+
+        // precompute max offsets
+        const settings = cols.map(col => {
+            const colHeight = col.el.scrollHeight;
+            const hidden = colHeight - sectionHeight;
+            const max = hidden * col.factor; // final distance this column must move
+            return { el: col.el, max };
+        });
+
+        document.addEventListener("scroll", () => {
+            const scrollY = window.scrollY;
+
+            // progress within the section, normalized to 0–1
+            let progress = (scrollY - sectionTop) / scrollTarget;
+            progress = Math.max(0, Math.min(progress, 1));
+
+            settings.forEach(cfg => {
+                const offset = -cfg.max * progress;
+                cfg.el.style.transform = `translateY(${offset}px)`;
+            });
+        });
+    });
+</script>
+
+
+
+
+
+
 
 
 
@@ -70,3 +134,5 @@ excerpt: "Wir übernehmen Content-Produktion, Strategie & Creative-Testing – d
             <div class="calendly-inline-widget" data-url="https://calendly.com/pswd/60m-onboarding-call" style="min-width:320px;height:700px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
+    </div>
+</section>

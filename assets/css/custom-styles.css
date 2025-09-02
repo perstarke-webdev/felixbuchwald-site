@@ -382,3 +382,43 @@
 .gallery-1 a img:hover {
     transform: scale(1.03);
 }
+
+
+
+
+
+
+
+.work-section {
+    background: #1B264F;
+    height: 100vh;           /* strict viewport "window" */
+    overflow: hidden;        /* crops top & bottom cleanly */
+    display: flex;
+    justify-content: center; /* center the whole collage block */
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.work-grid {
+    display: flex;
+    justify-content: center;
+    width: 92%;              /* a bit wider, closer to full bleed */
+    max-width: 1400px;       /* safety cap */
+    gap: 8px;                /* minimal horizontal gutter between columns */
+}
+
+.col {
+    width: 30%;              /* each column ~30% of collage */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;                /* very tight vertical gutter */
+}
+
+.col img {
+    width: 100%;             /* fill column width */
+    height: auto;            /* keep proportions */
+    display: block;
+    border-radius: 0;        /* no rounding */
+}
+
