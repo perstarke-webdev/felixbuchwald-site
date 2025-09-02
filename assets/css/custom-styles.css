@@ -391,7 +391,8 @@
 .logo-slider-container {
     overflow: hidden;
     width: 100%;
-    padding: 2rem 0; /* Add some vertical padding */
+    padding: 0;
+    margin-bottom: 1rem;
     background-color: #1B264F; /* Use the navy background color */
     margin-top: 4rem; /* Space from the about section */
 }
@@ -399,11 +400,11 @@
 .logo-slider {
     display: flex;
     width: max-content; /* Allow content to define width */
-    animation: slide 30s linear infinite; /* Adjust duration as needed */
+    animation: slide 20s linear infinite; /* Adjust duration as needed */
 }
 
 .logo-slider img {
-    height: 80px; /* Fixed height for all logos */
+    height: 70px; /* Fixed height for all logos */
     width: auto; /* Maintain aspect ratio */
     margin: 0 2rem; /* Space between logos */
     filter: grayscale(100%) brightness(200%); /* Make logos white/light grey */
